@@ -16,12 +16,14 @@ public class Main {
             if (list.contains(arr[i]+arr[i+1])) {
                 count++;
             }
+            // kí tu w
             if (arr[i+1].equals("w") && !arr[i].equals("a") && !arr[i].equals("o") ){
                 count++;
             }
-            if ((arr[i].equals("w") && i==0)){
-                count++;
-            }
+        }
+        // ki tu w dung dau
+        if (arr[0].equals("w")){
+            count++;
         }
         return count;
     }
